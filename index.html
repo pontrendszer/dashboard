@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Soundboard</title>
+  <title>Pontrendszer - Dashboard</title>
   <link rel="stylesheet" type="text/css" href="styles.css">
   <link rel="icon" type="image/x-icon" href="PRHUPFP.ico">
 </head>
 <body>
+  <h1 class="title">Dashboard</h1>
+  <div class="sep">.</div>
   <h1>Soundboard</h1>
   <div class="soundboard">
     <button class="sound-button" onclick="playSound('BoomBoomGirlSound.mp3')">Boom Boom Girl</button>
@@ -28,11 +30,25 @@
   <div class="sep">.</div>
   <h1>Játék Forgatókönyvek</h1>
   <select id="scripts" class="sound-button">
-    <option class="option">Betöltés folyamatban...</option>
-    <option class="option"></option>
+    <option class="option">-Válassz ki egy forgatókönyvet-</option>
+    <option class="option">1. játék - Szókitalálás süketen</option>
+    <option class="option">2. játék - Bingó</option>
+    <option class="option">3. játék - Murder Mystery</option>
+    <option class="option">Nyeremény kiosztás</option>
   </select>
-  <button class="sound-button"></button>
-  <script src="script.js"></script>
-  <script src="timer.js"></script>
+  <br>
+  <button class="sound-button" id="scriptget">Lekérdezés</button>
+
+  <!--Forgatókönyvek Helye-->
+  <div class="fkexport" style="display: block;">
+    <div class="sep">.</div>
+    <h1>FORGATÓKÖNYV CÍM</h1>
+    <br>
+    <p>Forgatókönyv szöveg</p>
+  </div>
+
+  <script src="Scripts/script.js"></script>
+  <script src="Scripts/timer.js"></script>
+  <script src="Scripts/getscripts.js"></script>
 </body>
 </html>

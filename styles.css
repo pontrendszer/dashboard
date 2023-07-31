@@ -108,6 +108,11 @@ input {
   cursor: pointer;
 }
 
+.title {
+  font-size: 50px;
+  text-decoration: underline;
+}
+
 /* Media query for mobile screens */
 @media (max-width: 480px) {
   h1 {
