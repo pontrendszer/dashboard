@@ -97,6 +97,16 @@ input {
   font-weight: bold;
 }
 
+.option {
+  text-align: center;
+  width: fit-content;
+  background-color: antiquewhite;
+}
+
+.option:hover {
+  background-color: rgb(108, 101, 92);
+  cursor: pointer;
+}
 
 /* Media query for mobile screens */
 @media (max-width: 480px) {
