@@ -31,7 +31,7 @@
   <h1>Játék Forgatókönyvek</h1>
   <select id="scripts" class="sound-button">
     <option class="option">-Válassz ki egy forgatókönyvet-</option>
-    <option class="option">1. játék - Szókitalálás süketen</option>
+    <option class="option">1. játék - Szókitaláló</option>
     <option class="option">2. játék - Bingó</option>
     <option class="option">3. játék - Murder Mystery</option>
     <option class="option">Nyeremény kiosztás</option>
@@ -40,11 +40,12 @@
   <button class="sound-button" id="scriptget">Lekérdezés</button>
 
   <!--Forgatókönyvek Helye-->
-  <div class="fkexport" style="display: block;">
+  <div class="fkexport" style="display: none;">
     <div class="sep">.</div>
-    <h1>FORGATÓKÖNYV CÍM</h1>
+    <h1 class="ftitle">FORGATÓKÖNYV CÍM</h1>
     <br>
-    <p>Forgatókönyv szöveg</p>
+    <p class="ftext">Forgatókönyv szöveg</p>
+    <!--<button class="close" onclick="close()">Bezárás</button>-->
   </div>
 
   <script src="Scripts/script.js"></script>

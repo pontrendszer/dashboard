@@ -6,20 +6,33 @@ function handleButtonClick() {
 
     // Define the mapping of values to alerts
     const alertMessages = {
-        '1. játék - Szókitalálás süketen': 'A',
+        '1. játék - Szókitaláló': 'Az első játék nem más mint (dobpergés)... név. Lényege. Hogyan fog zajlani. A sorrend: Balról az első talál a mellette lévő jobbra mond. Utána húz a mondó szavat, majd felrakjuk a találóra a fülest és indítjuk a zenét. Ha kitalálja 2 percen bellül, +1 pont, ha nem akkor nem kap pontot. Ez egy saját pontozású játék.',
         '2. játék - Bingó': 'B',
         '3. játék - Murder Mystery': 'C',
         'Nyeremény kiosztás': 'WINNER'
     };
 
+    const alertTitles = {
+        '1. játék - Szókitaláló': 'Szókitaláló',
+        '2. játék - Bingó': 'Bingó',
+        '3. játék - Murder Mystery': 'Murder Mystery',
+        'Nyeremény kiosztás': 'Nyeremény kiosztás'
+    };
+
     // Show the alert based on the selected value
     if (alertMessages.hasOwnProperty(selectedValue)) {
-        alert(alertMessages[selectedValue]);
+        document.querySelector('.fkexport').style.display = 'block';
+        document.querySelector('.ftitle').innerHTML = alertTitles[selectedValue]
+        document.querySelector('.ftext').innerHTML = alertMessages[selectedValue]
     } else {
-        alert('Invalid selection!');
+        document.querySelector('.fkexport').style.display = 'none';
+        alert("Ki kell választanod egy forgatókönyvet a lekérdezéshez!")
     }
 }
 
-// Attach the click event listener to the button
 const buttonElement = document.getElementById('scriptget');
 buttonElement.addEventListener('click', handleButtonClick);
+
+function close(){
+    document.querySelector('.fkexport').style.display = 'none';
+}
