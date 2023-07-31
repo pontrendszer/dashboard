@@ -15,6 +15,17 @@
     <button class="sound-button" onclick="playSound('Airhorn.mp3')">Duda</button>
     <button class="sound-button" onclick="playSound('Drumroll.mp3')">Dobpergés</button>
   </div>
+  <div class="sep">.</div>
+  <h1>Customizable Countdown Timer</h1>
+  <div id="timer">00:00</div>
+  <div id="controls">
+    <input type="number" id="minutes" min="0" max="59" step="1" value="0" class="custom-number-input"> <p id="cd">perc</p>
+    <input type="number" id="seconds" min="0" max="59" step="1" value="0" class="custom-number-input"> <p id="cd">másodperc</p>
+    <br>
+    <button id="startBtn" class="sound-button">Start</button>
+    <button id="resetBtn" class="sound-button">Reset</button>
+  </div>
   <script src="script.js"></script>
+  <script src="timer.js"></script>
 </body>
 </html>
