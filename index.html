@@ -18,15 +18,24 @@
     <button class="sound-button" onclick="playSound('Drumroll.mp3')">Dobpergés</button>
   </div>
   <div class="sep">.</div>
-  <h1>Customizable Countdown Timer</h1>
+  <h1>Visszaszámláló</h1>
   <div id="timer">00:00</div>
   <div id="controls">
     <input type="number" id="minutes" min="0" max="59" step="1" value="0" class="custom-number-input"> <p id="cd">perc</p>
     <input type="number" id="seconds" min="0" max="59" step="1" value="0" class="custom-number-input"> <p id="cd">másodperc</p>
     <br>
     <button id="startBtn" class="sound-button">Start</button>
-    <button id="resetBtn" class="sound-button">Reset</button>
+    <button id="resetBtn" class="sound-button">Visszaállítás</button>
   </div>
+  <div class="sep">.</div>
+  <h1>Random Szám Generátor</h1>
+  <p for="min">Minimum:</p>
+  <input type="number" id="min" min="1" required>
+  <p for="max">Maximum:</p>
+  <input type="number" id="max" min="1" required>
+  <br>
+  <button onclick="generateRandomNumber()" class="sound-button">Generálás</button>
+  <p id="result"></p>
   <div class="sep">.</div>
   <h1>Játék Forgatókönyvek</h1>
   <select id="scripts" class="sound-button">
@@ -51,5 +60,6 @@
   <script src="Scripts/script.js"></script>
   <script src="Scripts/timer.js"></script>
   <script src="Scripts/getscripts.js"></script>
+  <script src="Scripts/randomnumber.js"></script>
 </body>
 </html>
